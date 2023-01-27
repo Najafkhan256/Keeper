@@ -2,12 +2,18 @@ import React from "react";
 // import Notes from "./data";
 
 function Note(props) {
+  function handleClick() {
+    props.onDelete(props.id);
+  }
   return (
-    <div className="note" key={props.key}>
-      <h1>{props.title}</h1>
+    <article>
+      <h4>{props.title}</h4>
       <p>{props.content}</p>
-    </div>
+      <button onClick={handleClick}>DELETE</button>
+    </article>
   );
 }
+// page number 20 21
+// page number 40 41
 
 export default Note;
