@@ -7,7 +7,17 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background-color: #9a9494;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /*  background: linear-gradient(
+        90deg,
+        rgba(221, 225, 221, 0.933) 21px,
+        transparent 1%
+      )
+      center,
+    linear-gradient(rgba(221, 225, 221, 0.933) 21px, transparent 1%) center,
+    #000000;
+  background-size: 22px 22px; */
 }
 
 header {
@@ -68,8 +78,7 @@ footer p {
 
 form {
   position: relative;
-  max-width: 480px;
-  /* margin: 30px auto 20px auto; */
+  width: 480px;
   background: #fff;
   padding: 15px;
   border-radius: 7px;

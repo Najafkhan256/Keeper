@@ -6,6 +6,7 @@ import CreateNote from "./components/CreateNote";
 
 function App() {
   const [notes, setNotes] = useState([]);
+  const [expand, setExpand] = useState(false);
 
   function addNote(note) {
     setNotes((prevNotes) => {
@@ -22,7 +23,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CreateNote addNote={addNote} />
+      <CreateNote expand={expand} setExpand={setExpand} addNote={addNote} />
       <main>
         {notes.map((notesItem, index) => {
           return (
