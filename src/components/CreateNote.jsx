@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import AddIcon from "@mui/icons-material/Add";
-import { Zoom } from "@material-ui/core";
-
+import { IoMdAdd } from "react-icons/io";
 const CreateNote = ({ addNote, expand, setExpand }) => {
   const [note, setNote] = useState({ title: "", content: "" });
 
@@ -42,11 +40,9 @@ const CreateNote = ({ addNote, expand, setExpand }) => {
           />
         )}
         {expand && (
-          <Zoom in={true}>
-            <button type="submit">
-              <AddIcon />
-            </button>
-          </Zoom>
+          <button type="submit">
+            <IoMdAdd size={23} />
+          </button>
         )}
       </form>
     </div>

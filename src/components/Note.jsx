@@ -1,5 +1,5 @@
 import React from "react";
-import DeleteIcon from "@mui/icons-material/Delete";
+import { MdDelete } from "react-icons/md";
 
 function Note(props) {
   function handleClick() {
@@ -10,7 +10,7 @@ function Note(props) {
       <h4>{props.title}</h4>
       <p>{props.content}</p>
       <button onClick={handleClick}>
-        <DeleteIcon />
+        <MdDelete size={23} />
       </button>
     </article>
   );
