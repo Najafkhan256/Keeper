@@ -1,5 +1,4 @@
 import React from "react";
-// import Notes from "./data";
 
 function Note(props) {
   function handleClick() {
@@ -13,7 +12,5 @@ function Note(props) {
     </article>
   );
 }
-// page number 20 21
-// page number 40 41
 
 export default Note;

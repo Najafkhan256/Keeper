@@ -20,7 +20,7 @@ const CreateNote = (props) => {
   }
 
   return (
-    <div>
+    <div className="form-wrapper">
       <form onSubmit={submitNote}>
         <input
           name="title"
